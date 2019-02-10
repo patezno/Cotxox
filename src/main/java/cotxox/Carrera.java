@@ -60,10 +60,16 @@ public class Carrera {
     public int getTiempoCarrera() {
         return tiempoCarrera;
     }
-    /*
-    public String getCosteEsperado() {
+
+    public double getCosteEsperado() {
+
+        Tarifa.getCosteDistancia(this);
+        Tarifa.getCosteTiempo(this);
+
+        return Tarifa.getCosteTotalEsperado();
     }
 
+    /*
     public void realizarPago(String costeEsperado) {
     }
 

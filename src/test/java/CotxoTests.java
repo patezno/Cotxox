@@ -28,7 +28,12 @@ public class CotxoTests {
         assertEquals("4916119711304546", user.getTarjetaCredito());
         assertEquals("Aeroport Son Sant Joan", user.getOrigen());
         assertEquals("Magaluf", user.getDestino());
-        assertEquals(7.75, user.getDistancia(), 7.75);
+        assertEquals(7.75, user.getDistancia(), 0.0);
         assertEquals(10, user.getTiempoEsperadoMinutos());
+    }
+
+    @Test
+    public void getCosteEsperadoTest() {
+        assertEquals(13.9625, user.getCosteEsperado(), 0.0);
     }
 }
