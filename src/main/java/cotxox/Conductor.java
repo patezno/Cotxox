@@ -30,4 +30,27 @@ public class Conductor {
     public void setValoracion(byte valoracion) {
         this.valoraciones.add(valoracion);
     }
+
+    // Metodos
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public double getValoracion() {
+        return valoracionMedia;
+    }
+
+    public boolean isOcupado() {
+        return ocupado;
+    }
+
 }
