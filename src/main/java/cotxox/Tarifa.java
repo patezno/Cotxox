@@ -17,7 +17,7 @@ public class Tarifa {
     }
 
     public static void getCosteTiempo(Carrera carrera) {
-        costeTotal += carrera.getTiempoCarrera() * costeMinuto;
+        costeTotal += carrera.getTiempoEsperadoMinutos() * costeMinuto;
     }
 
     public static double getCosteTotalEsperado() {
