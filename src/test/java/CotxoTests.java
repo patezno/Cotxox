@@ -24,7 +24,7 @@ public class CotxoTests {
     }
 
     @Test
-    public void gettersTest() {
+    public void gettersCarreraTest() {
         assertEquals("4916119711304546", user.getTarjetaCredito());
         assertEquals("Aeroport Son Sant Joan", user.getOrigen());
         assertEquals("Magaluf", user.getDestino());
