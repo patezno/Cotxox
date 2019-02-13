@@ -4,26 +4,25 @@ public class Tarifa {
 
     // Atributos
 
-    private static double costeMilla = 1.35;
-    private static double costeMinuto = 0.35;
-    private static int costeMinimo = 5;
-    private double porcentajeComision = 20;
+    final static double COSTEMILLA = 1.35;
+    final static double COSTEMINUTO = 0.35;
+    final static int COSTEMINIMO = 5;
     private static double costeTotal = 0;
 
     // Metodos
 
     public static void getCosteDistancia(Carrera carrera) {
-        costeTotal += carrera.getDistancia() * costeMilla;
+        costeTotal += carrera.getDistancia() * COSTEMILLA;
     }
 
     public static void getCosteTiempo(Carrera carrera) {
-        costeTotal += carrera.getTiempoEsperadoMinutos() * costeMinuto;
+        costeTotal += carrera.getTiempoEsperadoMinutos() * COSTEMINUTO;
     }
 
     public static double getCosteTotalEsperado() {
 
-        if (costeTotal < costeMinimo) {
-            return costeMinimo;
+        if (costeTotal < COSTEMINIMO) {
+            return COSTEMINIMO;
         } else {
             return costeTotal;
         }

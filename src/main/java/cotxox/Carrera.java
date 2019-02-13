@@ -9,7 +9,6 @@ public class Carrera {
     private String destino = "";
     private double distancia = 0;
     private int tiempoEsperadoMinutos = 0;
-    private int tiempoCarrera = 0;
     private double costeTotal = 0;
     private Conductor conductor = null;
     private int propina = 0;
@@ -40,9 +39,6 @@ public class Carrera {
         this.conductor = conductor;
     }
 
-    public void setTiempoCarrera(int tiempoCarrera) {
-        this.tiempoCarrera = tiempoCarrera;
-    }
 
     // Metodos
 
@@ -64,10 +60,6 @@ public class Carrera {
 
     public int getTiempoEsperadoMinutos() {
         return tiempoEsperadoMinutos;
-    }
-
-    public int getTiempoCarrera() {
-        return tiempoCarrera;
     }
 
     public double getCosteEsperado() {

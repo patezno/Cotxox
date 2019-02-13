@@ -5,11 +5,15 @@ import java.util.Random;
 
 public class PoolConductores {
 
-    private ArrayList<Conductor> poolConductores = new ArrayList<Conductor>();
+    // Atributos
+
+    private ArrayList<Conductor> poolConductores;
 
     public PoolConductores(ArrayList<Conductor> poolConductores) {
         this.poolConductores = poolConductores;
     }
+
+    // Metodos
 
     public ArrayList<Conductor> getPoolConductores() {
         return poolConductores;
