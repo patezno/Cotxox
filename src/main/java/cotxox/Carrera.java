@@ -11,7 +11,8 @@ public class Carrera {
     private int tiempoEsperadoMinutos = 0;
     private int tiempoCarrera = 0;
     private double costeTotal = 0;
-    private String conductor = "";
+    private Conductor conductor = null;
+    private int propina = 0;
 
     // Constructor
 
@@ -33,6 +34,14 @@ public class Carrera {
 
     public void setTiempoEsperado(int tiempoEsperadoMinutos) {
         this.tiempoEsperadoMinutos = tiempoEsperadoMinutos;
+    }
+
+    public void setConductor(Conductor conductor) {
+        this.conductor = conductor;
+    }
+
+    public void setTiempoCarrera(int tiempoCarrera) {
+        this.tiempoCarrera = tiempoCarrera;
     }
 
     // Metodos
@@ -69,17 +78,31 @@ public class Carrera {
         return Tarifa.getCosteTotalEsperado();
     }
 
-    /*
-    public void realizarPago(String costeEsperado) {
+    public Conductor getConductor() {
+        return this.conductor;
+    }
+
+    public int getPropina() {
+        return propina;
+    }
+
+    public double getCosteTotal() {
+        return costeTotal;
     }
 
     public void asignarConductor(PoolConductores conductores) {
-    }
-
-    public void recibirPropina(int i) {
+        setConductor(conductores.asignarConductor());
     }
 
     public void liberarConductor() {
+        conductor.setOcupado(false);
     }
-    */
+
+    public void realizarPago(double pago) {
+        this.costeTotal = pago;
+    }
+
+    public void recibirPropina(int propina) {
+        this.propina = propina;
+    }
 }

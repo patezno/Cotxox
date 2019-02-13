@@ -15,6 +15,8 @@ public class Conductor {
 
     // Constructor
 
+    public Conductor() {}
+
     public Conductor(String nombre) {
         this.nombre = nombre;
     }
@@ -29,6 +31,11 @@ public class Conductor {
 
     public void setValoracion(byte valoracion) {
         this.valoraciones.add(valoracion);
+        this.calcularMedia();
+    }
+
+    public void setOcupado(Boolean ocupado) {
+        this.ocupado = ocupado;
     }
 
     // Metodos
@@ -53,4 +60,17 @@ public class Conductor {
         return ocupado;
     }
 
+    public double calcularMedia() {
+
+        int suma = 0;
+
+        for (byte valoracion : this.valoraciones) {
+            suma += valoracion;
+        }
+
+        this.valoracionMedia = (double) suma / this.valoraciones.size();
+
+        return valoracionMedia;
+
+    }
 }
