@@ -9,15 +9,21 @@ public class PoolConductores {
 
     private ArrayList<Conductor> poolConductores;
 
+    //Constructores
+
+    public PoolConductores() {}
+
     public PoolConductores(ArrayList<Conductor> poolConductores) {
         this.poolConductores = poolConductores;
     }
 
-    // Metodos
+    // Getter
 
     public ArrayList<Conductor> getPoolConductores() {
         return poolConductores;
     }
+
+    // Metodo
 
     public Conductor asignarConductor() {
 

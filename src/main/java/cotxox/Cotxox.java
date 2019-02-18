@@ -50,14 +50,14 @@ public class Cotxox {
 
         // creamos objetos conductor y los metemos en el array
 
-        String[] nombres = { "Samantha", "Fox", "Mola" };
+        String[] nombres = {"Samantha", "Fox", "Mola"};
         for (String nombre : nombres) {
             conductor = new Conductor(nombre);
             poolConductores.add(conductor);
         }
 
-        String[] matricula = { "4ABC123", "5DHJ444", "7JKK555" };
-        String[] modelos = { "Chevy Malibu", "Toyota Prius", "Mercedes A" };
+        String[] matricula = {"4ABC123", "5DHJ444", "7JKK555"};
+        String[] modelos = {"Chevy Malibu", "Toyota Prius", "Mercedes A"};
 
         int index = 0;
         // conductora.getClass().getFields();

@@ -13,11 +13,15 @@ public class Carrera {
     private Conductor conductor = null;
     private int propina = 0;
 
-    // Constructor
+    // Constructores
+
+    public Carrera() {}
 
     public Carrera(String tarjetaCredito) {
         this.tarjetaCredito = tarjetaCredito;
     }
+
+    // Setters
 
     public void setOrigen(String origen) {
         this.origen = origen;
@@ -39,8 +43,7 @@ public class Carrera {
         this.conductor = conductor;
     }
 
-
-    // Metodos
+    // Getters
 
     public String getTarjetaCredito() {
         return tarjetaCredito;
@@ -81,6 +84,8 @@ public class Carrera {
     public double getCosteTotal() {
         return costeTotal;
     }
+
+    // Metodos
 
     public void asignarConductor(PoolConductores conductores) {
         setConductor(conductores.asignarConductor());

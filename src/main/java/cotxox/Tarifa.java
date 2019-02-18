@@ -9,7 +9,11 @@ public class Tarifa {
     final static int COSTEMINIMO = 5;
     private static double costeTotal = 0;
 
-    // Metodos
+    // Constructor
+
+    public Tarifa() {}
+
+    // Getters
 
     public static void getCosteDistancia(Carrera carrera) {
         costeTotal += carrera.getDistancia() * COSTEMILLA;

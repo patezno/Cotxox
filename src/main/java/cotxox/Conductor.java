@@ -13,13 +13,16 @@ public class Conductor {
     private ArrayList<Byte> valoraciones = new ArrayList<Byte>();
     private boolean ocupado = false;
 
-    // Constructor
+    // Constructores
 
-    public Conductor() {}
+    public Conductor() {
+    }
 
     public Conductor(String nombre) {
         this.nombre = nombre;
     }
+
+    // Setters
 
     public void setMatricula(String matricula) {
         this.matricula = matricula;
@@ -38,7 +41,7 @@ public class Conductor {
         this.ocupado = ocupado;
     }
 
-    // Metodos
+    // Getters
 
     public String getNombre() {
         return nombre;
@@ -59,6 +62,8 @@ public class Conductor {
     public boolean isOcupado() {
         return ocupado;
     }
+
+    // Metodos
 
     public double calcularMedia() {
 
